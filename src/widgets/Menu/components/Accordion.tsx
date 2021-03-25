@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React, { ReactNode, useState } from "react";
 import styled from "styled-components";
-import { MENU_ENTRY_HEIGHT } from "./config";
+import { MENU_ENTRY_HEIGHT } from "../config";
 import { MenuEntry, LinkLabel } from "./MenuEntry";
-import { PushedProps } from "./types";
-import { ArrowDropDownIcon, ArrowDropUpIcon } from "../../components/Svg";
+import { PushedProps } from "../types";
+import { ArrowDropDownIcon, ArrowDropUpIcon } from "../../../components/Svg";
 
 interface Props extends PushedProps {
   label: string;
   icon: React.ReactElement;
   initialOpenState?: boolean;
   className?: string;
+  children: ReactNode;
 }
 
 const Container = styled.div`
@@ -66,4 +67,4 @@ const Accordion: React.FC<Props> = ({
   );
 };
 
-export default Accordion;
+export default React.memo(Accordion, (prev, next) => prev.isPushed === next.isPushed);

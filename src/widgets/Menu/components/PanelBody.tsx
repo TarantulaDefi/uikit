@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
-import { SvgProps } from "../../components/Svg";
-import * as IconModule from "./icons";
+import { SvgProps } from "../../../components/Svg";
+import * as IconModule from "../icons";
 import Accordion from "./Accordion";
 import { MenuEntry, LinkLabel } from "./MenuEntry";
 import MenuLink from "./MenuLink";
-import { PanelProps, PushedProps } from "./types";
+import { PanelProps, PushedProps } from "../types";
 
 interface Props extends PanelProps, PushedProps {
   isMobile: boolean;
@@ -36,6 +36,9 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
         const calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
 
         if (entry.items) {
+          const itemsMatchIndex = entry.items.findIndex((item) => item.href === location.pathname);
+          const initialOpenState = entry.initialOpenState === true ? entry.initialOpenState : itemsMatchIndex >= 0;
+
           return (
             <Accordion
               key={entry.label}
@@ -43,13 +46,13 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
               pushNav={pushNav}
               icon={iconElement}
               label={entry.label}
-              initialOpenState={entry.initialOpenState}
+              initialOpenState={initialOpenState}
               className={calloutClass}
             >
               {isPushed &&
                 entry.items.map((item) => (
                   <MenuEntry key={item.href} secondary isActive={item.href === location.pathname} onClick={handleClick}>
-                    <MenuLink href={item.href}>{item.label}</MenuLink>
+                    <MenuLink href={item.href} target={item.target}>{item.label}</MenuLink>
                   </MenuEntry>
                 ))}
             </Accordion>

@@ -26,6 +26,7 @@ export interface NavTheme {
 export interface MenuSubEntry {
   label: string;
   href: string;
+  target?: string;
   calloutClass?: string;
 }
 
@@ -47,7 +48,6 @@ export interface PanelProps {
   langs: LangType[];
   setLang: (lang: LangType) => void;
   links: Array<MenuEntry>;
-  priceLink: string;
 }
 
 export interface NavProps extends PanelProps {

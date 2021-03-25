@@ -35,6 +35,11 @@ export const links = [
     target: "_blank",
   },
   {
+    label: "Bush",
+    icon: "BushIcon",
+    href: "/bush",
+  },
+  {
     label: "Lottery",
     icon: "TicketIcon",
     href: "/lottery",
@@ -106,6 +111,7 @@ export const links = [
       {
         label: "Github",
         href: "https://github.com/TarantulaDefi/",
+        target: '_blank',
       },
       {
         label: "Docs",
