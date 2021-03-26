@@ -2109,7 +2109,7 @@ var Icon$R = function (props) {
 };
 
 var Text$1 = styled.text(templateObject_1$z || (templateObject_1$z = __makeTemplateObject(["\n  font-size: 26.26px;\n  font-family: GoodTimingRg-Bold, Good Timing;\n  font-weight: 700;\n"], ["\n  font-size: 26.26px;\n  font-family: GoodTimingRg-Bold, Good Timing;\n  font-weight: 700;\n"])));
-var Tspan = styled.tspan(templateObject_2$b || (templateObject_2$b = __makeTemplateObject(["\n  letter-spacing: 0em;\n"], ["\n  letter-spacing: 0em;\n"])));
+var Tspan = styled.tspan(templateObject_2$b || (templateObject_2$b = __makeTemplateObject(["\n  font-size: 26.26px;\n  font-family: GoodTimingRg-Bold, Good Timing;\n  font-weight: 700;\n  letter-spacing: 0em;\n"], ["\n  font-size: 26.26px;\n  font-family: GoodTimingRg-Bold, Good Timing;\n  font-weight: 700;\n  letter-spacing: 0em;\n"])));
 var Logo = function (_a) {
     _a.isDark; var props = __rest(_a, ["isDark"]);
     return (React.createElement(Svg, __assign({ viewBox: "0 0 160 26" }, props),

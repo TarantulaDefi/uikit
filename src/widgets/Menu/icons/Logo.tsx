@@ -9,6 +9,9 @@ const Text = styled.text`
   font-weight: 700;
 `;
 const Tspan = styled.tspan`
+  font-size: 26.26px;
+  font-family: GoodTimingRg-Bold, Good Timing;
+  font-weight: 700;
   letter-spacing: 0em;
 `;
 
