@@ -4,19 +4,12 @@ import { SvgProps } from "../../../components/Svg/types";
 import styled from "styled-components";
 
 const Text = styled.text`
-  .cls-1 {
-    font-size: 26.26px;
-    font-family: GoodTimingRg-Bold, Good Timing;
-    font-weight: 700;
-  }
+  font-size: 26.26px;
+  font-family: GoodTimingRg-Bold, Good Timing;
+  font-weight: 700;
 `;
 const Tspan = styled.tspan`
-  .cls-2 {
-    letter-spacing: 0em;
-  }
-  .cls-3 {
-    letter-spacing: 0em;
-  }
+  letter-spacing: 0em;
 `;
 
 interface LogoProps extends SvgProps {
