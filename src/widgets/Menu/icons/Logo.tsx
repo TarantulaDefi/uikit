@@ -5,12 +5,12 @@ import styled from "styled-components";
 
 const Text = styled.text`
   font-size: 26.26px;
-  font-family: GoodTimingRg-Bold, Good Timing;
+  font-family: GoodTimingRg-Bold, Good Timing !important;
   font-weight: 700;
 `;
 const Tspan = styled.tspan`
   font-size: 26.26px;
-  font-family: GoodTimingRg-Bold, Good Timing;
+  font-family: GoodTimingRg-Bold, Good Timing !important;
   font-weight: 700;
   letter-spacing: 0em;
 `;
