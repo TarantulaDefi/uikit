@@ -1,6 +1,23 @@
 import React from "react";
 import Svg from "../../../components/Svg/Svg";
 import { SvgProps } from "../../../components/Svg/types";
+import styled from "styled-components";
+
+const Text = styled.text`
+  .cls-1 {
+    font-size:26.26px;
+    font-family:GoodTimingRg-Bold, Good Timing;
+    font-weight:700;    
+  }
+`
+const Tspan = styled.tspan`
+  .cls-2 {
+    letter-spacing:0em;
+  }
+  .cls-3 {
+    letter-spacing:0em;
+  }
+`
 
 interface LogoProps extends SvgProps {
   isDark: boolean;
@@ -10,8 +27,14 @@ const Logo: React.FC<LogoProps> = ({ isDark, ...props }) => {
   const textColor = isDark ? "#FFFFFF" : "#432918";
   return (
     <Svg viewBox="0 0 160 26" {...props}>
-      
-      <text className="cls-1" transform="translate(22.93 21.67)">ta<tspan className="cls-2" x="28.6" y="0">r</tspan><tspan x="40.34" y="0">a</tspan><tspan className="cls-3" x="57.2" y="0">n</tspan><tspan x="75.06" y="0">tula</tspan></text>
+      {/* <defs>
+        <style>
+          .cls-1{font-size:26.26px;font-family:GoodTimingRg-Bold, Good Timing;font-weight:700;}
+          .cls-2{letter-spacing:0em;}
+          .cls-3{letter-spacing:0em;}
+        </style>
+      </defs> */}
+      <Text fill="#d37a20" className="cls-1" transform="translate(22.93 21.67)">ta<Tspan className="cls-2" x="28.6" y="0">r</Tspan><tspan x="40.34" y="0">a</tspan><Tspan className="cls-3" x="57.2" y="0">n</Tspan><tspan x="75.06" y="0">tula</tspan></Text>
       <path fill="#595150" d="M10,4.08s-.7-.88-.75-1-.45-.68-.45-.68l-.54.18-.12.57.43.73.57.46.47.24Z" transform="translate(-2.78 0.3)"/>
       <path fill="#352826" d="M10.91,5.23l-.39-1-.83-.7-.37.37-.05.76a4.66,4.66,0,0,0,.29.48,2,2,0,0,0,.42.31c.17.1.42.22.42.22Z" transform="translate(-2.78 0.3)"/>
       <path fill="#050303" d="M11.73,6.67s-.23-.82-.27-.93S11,4.81,11,4.81h-.65L10,5.44l.13.59.39.54.51.61Z" transform="translate(-2.78 0.3)"/>
