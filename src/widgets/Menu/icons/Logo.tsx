@@ -31,19 +31,7 @@ const Logo: React.FC<LogoProps> = ({ isDark, ...props }) => {
         </style>
       </defs> */}
       <Text fill="#d37a20" className="cls-1" transform="translate(22.93 21.67)">
-        ta
-        <Tspan className="cls-2" x="28.6" y="0">
-          r
-        </Tspan>
-        <tspan x="40.34" y="0">
-          a
-        </tspan>
-        <Tspan className="cls-3" x="57.2" y="0">
-          n
-        </Tspan>
-        <tspan x="75.06" y="0">
-          tula
-        </tspan>
+        tarantula
       </Text>
       <path
         fill="#595150"

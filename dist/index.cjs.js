@@ -2202,16 +2202,11 @@ var Icon$R = function (props) {
 };
 
 var Text$1 = styled__default['default'].text(templateObject_1$z || (templateObject_1$z = __makeTemplateObject(["\n  font-size: 26.26px;\n  font-family: GoodTimingRg-Bold, Good Timing !important;\n  font-weight: 700;\n"], ["\n  font-size: 26.26px;\n  font-family: GoodTimingRg-Bold, Good Timing !important;\n  font-weight: 700;\n"])));
-var Tspan = styled__default['default'].tspan(templateObject_2$b || (templateObject_2$b = __makeTemplateObject(["\n  font-size: 26.26px;\n  font-family: GoodTimingRg-Bold, Good Timing !important;\n  font-weight: 700;\n  letter-spacing: 0em;\n"], ["\n  font-size: 26.26px;\n  font-family: GoodTimingRg-Bold, Good Timing !important;\n  font-weight: 700;\n  letter-spacing: 0em;\n"])));
+styled__default['default'].tspan(templateObject_2$b || (templateObject_2$b = __makeTemplateObject(["\n  font-size: 26.26px;\n  font-family: GoodTimingRg-Bold, Good Timing !important;\n  font-weight: 700;\n  letter-spacing: 0em;\n"], ["\n  font-size: 26.26px;\n  font-family: GoodTimingRg-Bold, Good Timing !important;\n  font-weight: 700;\n  letter-spacing: 0em;\n"])));
 var Logo = function (_a) {
     _a.isDark; var props = __rest(_a, ["isDark"]);
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 160 26" }, props),
-        React__default['default'].createElement(Text$1, { fill: "#d37a20", className: "cls-1", transform: "translate(22.93 21.67)" },
-            "ta",
-            React__default['default'].createElement(Tspan, { className: "cls-2", x: "28.6", y: "0" }, "r"),
-            React__default['default'].createElement("tspan", { x: "40.34", y: "0" }, "a"),
-            React__default['default'].createElement(Tspan, { className: "cls-3", x: "57.2", y: "0" }, "n"),
-            React__default['default'].createElement("tspan", { x: "75.06", y: "0" }, "tula")),
+        React__default['default'].createElement(Text$1, { fill: "#d37a20", className: "cls-1", transform: "translate(22.93 21.67)" }, "tarantula"),
         React__default['default'].createElement("path", { fill: "#595150", d: "M10,4.08s-.7-.88-.75-1-.45-.68-.45-.68l-.54.18-.12.57.43.73.57.46.47.24Z", transform: "translate(-2.78 0.3)" }),
         React__default['default'].createElement("path", { fill: "#352826", d: "M10.91,5.23l-.39-1-.83-.7-.37.37-.05.76a4.66,4.66,0,0,0,.29.48,2,2,0,0,0,.42.31c.17.1.42.22.42.22Z", transform: "translate(-2.78 0.3)" }),
         React__default['default'].createElement("path", { fill: "#050303", d: "M11.73,6.67s-.23-.82-.27-.93S11,4.81,11,4.81h-.65L10,5.44l.13.59.39.54.51.61Z", transform: "translate(-2.78 0.3)" }),
